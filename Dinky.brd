@@ -3,7 +3,7 @@
 <eagle version="9.6.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -155,9 +155,45 @@
 <wire x1="4.445" y1="11.43" x2="4.445" y2="3.81" width="0.1524" layer="21"/>
 <wire x1="4.445" y1="11.43" x2="0.635" y2="11.43" width="0.1524" layer="21"/>
 <wire x1="4.445" y1="3.81" x2="0.635" y2="3.81" width="0.1524" layer="21"/>
-<text x="23.368" y="3.175" size="0.4064" layer="25" rot="R180">3V3</text>
-<text x="30.48" y="8.255" size="1.016" layer="25">Dinky v0.2</text>
-<text x="40.005" y="6.985" size="1.016" layer="25" rot="R180">Rob Hardy © 2020</text>
+<text x="23.495" y="4.318" size="0.4064" layer="25" rot="R270" align="center">VDDANA</text>
+<text x="32.385" y="7.874" size="0.8128" layer="25">Dinky v0.2</text>
+<text x="37.719" y="7.366" size="0.8128" layer="25" rot="R180">Rob Hardy © 2020</text>
+<circle x="17.78" y="7.62" radius="0.381" width="0.127" layer="21"/>
+<text x="25.4" y="3.81" size="0.4064" layer="25" rot="R90" align="center">GND</text>
+<text x="12.7" y="11.43" size="0.4064" layer="25" rot="R90" align="center">GND</text>
+<text x="7.62" y="11.176" size="0.4064" layer="25" rot="R90" align="center">VDDIN</text>
+<wire x1="22.86" y1="2.54" x2="22.86" y2="3.175" width="0.0762" layer="25"/>
+<wire x1="22.86" y1="3.175" x2="23.241" y2="3.556" width="0.0762" layer="25"/>
+<text x="2.54" y="3.175" size="0.4064" layer="25" align="center">PA00</text>
+<text x="5.08" y="3.81" size="0.4064" layer="25" rot="R90" align="center">PA01</text>
+<text x="7.62" y="3.81" size="0.4064" layer="25" rot="R90" align="center">PA02</text>
+<text x="10.16" y="3.81" size="0.4064" layer="25" rot="R90" align="center">PA03</text>
+<text x="12.7" y="3.81" size="0.4064" layer="25" rot="R90" align="center">PA04</text>
+<text x="15.24" y="3.81" size="0.4064" layer="25" rot="R90" align="center">PA05</text>
+<text x="17.78" y="3.81" size="0.4064" layer="25" rot="R90" align="center">PA06</text>
+<text x="20.32" y="3.81" size="0.4064" layer="25" rot="R90" align="center">PA07</text>
+<text x="27.94" y="3.81" size="0.4064" layer="25" rot="R90" align="center">PA08</text>
+<text x="30.48" y="3.81" size="0.4064" layer="25" rot="R90" align="center">PA09</text>
+<text x="33.02" y="3.81" size="0.4064" layer="25" rot="R90" align="center">PA10</text>
+<text x="35.56" y="3.81" size="0.4064" layer="25" rot="R90" align="center">PA11</text>
+<text x="38.1" y="3.81" size="0.4064" layer="25" rot="R90" align="center">PA14</text>
+<text x="40.64" y="3.81" size="0.4064" layer="25" rot="R90" align="center">PA15</text>
+<text x="43.18" y="3.175" size="0.4064" layer="25" rot="R180" align="center">VBUS</text>
+<text x="43.18" y="12.065" size="0.4064" layer="25" align="center">GND</text>
+<text x="40.64" y="11.43" size="0.4064" layer="25" rot="R90" align="center">PA16</text>
+<text x="38.1" y="11.43" size="0.4064" layer="25" rot="R90" align="center">PA17</text>
+<text x="35.56" y="11.43" size="0.4064" layer="25" rot="R90" align="center">PA18</text>
+<text x="33.02" y="11.43" size="0.4064" layer="25" rot="R90" align="center">PA19</text>
+<text x="30.48" y="11.43" size="0.4064" layer="25" rot="R90" align="center">PA22</text>
+<text x="27.94" y="11.43" size="0.4064" layer="25" rot="R90" align="center">PA23</text>
+<text x="25.4" y="11.43" size="0.4064" layer="25" rot="R90" align="center">PA24</text>
+<text x="22.86" y="11.43" size="0.4064" layer="25" rot="R90" align="center">PA25</text>
+<text x="20.32" y="11.43" size="0.4064" layer="25" rot="R90" align="center">PA27</text>
+<text x="17.78" y="11.43" size="0.4064" layer="25" rot="R90" align="center">RST</text>
+<text x="15.24" y="11.43" size="0.4064" layer="25" rot="R90" align="center">PA28</text>
+<text x="10.16" y="10.668" size="0.4064" layer="25" rot="R270" align="center">VDDCORE</text>
+<text x="5.08" y="11.43" size="0.4064" layer="25" rot="R270" align="center">PA30</text>
+<text x="2.54" y="12.065" size="0.4064" layer="25" align="center">PA31</text>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">
@@ -922,8 +958,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="1.27" y="-1.905" size="1.27" layer="27"/>
 </element>
 <element name="IC1" library="cypress" library_urn="urn:adsk.eagle:library:206" package="QFN32" package3d_urn="urn:adsk.eagle:package:12252/1" value="SAMD21" x="21.59" y="7.62" smashed="yes" rot="R45" grouprefs="BOARD">
-<attribute name="NAME" x="17.7009125" y="7.973553125" size="1.27" layer="25" rot="R45"/>
-<attribute name="VALUE" x="22.192434375" y="11.737028125" size="1.27" layer="26" rot="R315"/>
+<attribute name="NAME" x="18.3359125" y="8.608553125" size="1.016" layer="25" rot="R45"/>
 </element>
 <element name="REG" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="SOT23" package3d_urn="urn:adsk.eagle:package:6240836/1" value="" x="34.29" y="7.62" smashed="yes" rot="MR90" grouprefs="BOARD REG_GRP">
 <attribute name="NAME" x="36.195" y="5.715" size="1.27" layer="26" rot="MR90"/>
@@ -963,9 +998,9 @@ design rules under a new name.</description>
 </element>
 <element name="E$4" library="1x1Header" package="1X1HEADER" value="" x="43.18" y="13.97" smashed="yes"/>
 <element name="E$5" library="1x1Header" package="1X1HEADER" value="" x="43.18" y="1.27" smashed="yes"/>
-<element name="RST" library="B3U1000P" package="B3U-1000P" value="" x="12.7" y="7.62" smashed="yes">
-<attribute name="NAME" x="9.572" y="7.541" size="1.27" layer="25" rot="R90" align="center"/>
-<attribute name="VALUE" x="12.239" y="7.414" size="1.27" layer="27" align="center"/>
+<element name="RST" library="B3U1000P" package="B3U-1000P" value="" x="13.97" y="7.62" smashed="yes">
+<attribute name="NAME" x="11.096" y="7.668" size="1.27" layer="25" rot="R90" align="center"/>
+<attribute name="VALUE" x="13.509" y="7.414" size="1.27" layer="27" align="center"/>
 </element>
 </elements>
 <signals>
@@ -976,11 +1011,12 @@ design rules under a new name.</description>
 <wire x1="19.07976875" y1="8.362459375" x2="17.917228125" y2="9.525" width="0.1524" layer="1" grouprefs="BOARD"/>
 <wire x1="17.917228125" y1="9.525" x2="9.525" y2="9.525" width="0.1524" layer="1" grouprefs="BOARD"/>
 <wire x1="9.525" y1="9.525" x2="5.08" y2="13.97" width="0.1524" layer="1" grouprefs="BOARD"/>
-<wire x1="4.445" y1="10.795" x2="3.175" y2="12.065" width="0.1524" layer="1" grouprefs="BOARD"/>
+<wire x1="4.445" y1="11.176" x2="3.556" y2="12.065" width="0.1524" layer="1" grouprefs="BOARD"/>
 <wire x1="3.175" y1="8.89" x2="4.445" y2="10.16" width="0.1524" layer="1" grouprefs="BOARD"/>
-<wire x1="4.445" y1="10.795" x2="4.445" y2="10.16" width="0.1524" layer="1" grouprefs="BOARD"/>
-<via x="3.175" y="12.065" extent="1-16" drill="0.35" grouprefs="BOARD"/>
-<wire x1="3.175" y1="12.065" x2="5.08" y2="13.97" width="0.1524" layer="16" grouprefs="BOARD"/>
+<wire x1="4.445" y1="11.176" x2="4.445" y2="10.16" width="0.1524" layer="1" grouprefs="BOARD"/>
+<via x="3.556" y="12.065" extent="1-16" drill="0.35" grouprefs="BOARD"/>
+<wire x1="5.08" y1="13.97" x2="3.556" y2="12.446" width="0.1524" layer="16"/>
+<wire x1="3.556" y1="12.446" x2="3.556" y2="12.065" width="0.1524" layer="16" grouprefs="BOARD"/>
 </signal>
 <signal name="S$3">
 <contactref element="E$1" pad="3"/>
@@ -1041,9 +1077,9 @@ design rules under a new name.</description>
 <wire x1="15.875" y1="10.795" x2="13.335" y2="10.795" width="0.1524" layer="1" grouprefs="BOARD"/>
 <via x="15.875" y="10.795" extent="1-16" drill="0.35" grouprefs="BOARD"/>
 <wire x1="15.875" y1="10.795" x2="15.8468" y2="10.7668" width="0.1524" layer="16" grouprefs="BOARD"/>
-<wire x1="15.8468" y1="10.7668" x2="15.8468" y2="10.54365" width="0.1524" layer="16" grouprefs="BOARD"/>
-<wire x1="15.8468" y1="10.54365" x2="14.82815" y2="9.525" width="0.1524" layer="16" grouprefs="BOARD"/>
-<wire x1="14.82815" y1="9.525" x2="13.52" y2="9.525" width="0.1524" layer="16" grouprefs="BOARD"/>
+<wire x1="15.8468" y1="10.7668" x2="15.8468" y2="10.28965" width="0.1524" layer="16" grouprefs="BOARD"/>
+<wire x1="15.8468" y1="10.28965" x2="15.08215" y2="9.525" width="0.1524" layer="16" grouprefs="BOARD"/>
+<wire x1="15.08215" y1="9.525" x2="13.52" y2="9.525" width="0.1524" layer="16" grouprefs="BOARD"/>
 </signal>
 <signal name="S$6">
 <contactref element="E$1" pad="6"/>
@@ -1061,16 +1097,15 @@ design rules under a new name.</description>
 <wire x1="17.78" y1="13.197765625" x2="17.78" y2="13.97" width="0.1524" layer="1" grouprefs="BOARD"/>
 <wire x1="5.265" y1="5.08" x2="6.985" y2="6.8" width="0.1524" layer="16" grouprefs="BOARD"/>
 <wire x1="3.175" y1="5.08" x2="5.265" y2="5.08" width="0.1524" layer="16" grouprefs="BOARD"/>
-<wire x1="6.985" y1="6.8" x2="7.435" y2="6.8" width="0.1524" layer="16" grouprefs="BOARD"/>
-<wire x1="7.435" y1="6.8" x2="8.89" y2="8.255" width="0.1524" layer="16" grouprefs="BOARD"/>
-<wire x1="8.89" y1="8.255" x2="14.605" y2="8.255" width="0.1524" layer="16" grouprefs="BOARD"/>
+<wire x1="6.985" y1="6.8" x2="9.086" y2="6.8" width="0.1524" layer="16" grouprefs="BOARD"/>
+<wire x1="9.086" y1="6.8" x2="9.906" y2="7.62" width="0.1524" layer="16" grouprefs="BOARD"/>
+<wire x1="9.906" y1="7.62" x2="13.97" y2="7.62" width="0.1524" layer="16" grouprefs="BOARD"/>
 <wire x1="16.51" y1="10.16" x2="16.51" y2="12.7" width="0.1524" layer="16" grouprefs="BOARD"/>
 <wire x1="16.51" y1="12.7" x2="17.78" y2="13.97" width="0.1524" layer="16" grouprefs="BOARD"/>
-<wire x1="14.605" y1="8.255" x2="16.51" y2="10.16" width="0.1524" layer="16" grouprefs="BOARD"/>
+<wire x1="13.97" y1="7.62" x2="16.51" y2="10.16" width="0.1524" layer="16" grouprefs="BOARD"/>
 <contactref element="RST" pad="2"/>
-<wire x1="11" y1="7.62" x2="9.525" y2="7.62" width="0.1524" layer="1"/>
-<via x="9.525" y="7.62" extent="1-16" drill="0.35"/>
-<wire x1="9.525" y1="7.62" x2="8.89" y2="8.255" width="0.1524" layer="16"/>
+<wire x1="12.27" y1="7.62" x2="9.906" y2="7.62" width="0.1524" layer="1"/>
+<via x="9.906" y="7.62" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="S$8">
 <contactref element="E$1" pad="8"/>
@@ -1082,25 +1117,28 @@ design rules under a new name.</description>
 <signal name="S$9">
 <contactref element="E$1" pad="9"/>
 <contactref element="IC1" pad="24"/>
-<via x="25.7194" y="7.62" extent="1-16" drill="0.35" grouprefs="BOARD"/>
-<wire x1="42.385" y1="7.62" x2="25.7194" y2="7.62" width="0.1524" layer="1" grouprefs="BOARD"/>
+<via x="25.7194" y="8.255" extent="1-16" drill="0.35" grouprefs="BOARD"/>
+<wire x1="42.385" y1="7.62" x2="37.94" y2="7.62" width="0.1524" layer="1"/>
+<wire x1="37.94" y1="7.62" x2="37.305" y2="8.255" width="0.1524" layer="1"/>
+<wire x1="37.305" y1="8.255" x2="25.7194" y2="8.255" width="0.1524" layer="1" grouprefs="BOARD"/>
 <wire x1="21.97890625" y1="10.48378125" x2="21.97890625" y2="12.45390625" width="0.1524" layer="1" grouprefs="BOARD"/>
 <wire x1="21.97890625" y1="12.45390625" x2="22.86" y2="13.335" width="0.1524" layer="1" grouprefs="BOARD"/>
 <wire x1="22.86" y1="13.335" x2="22.86" y2="13.97" width="0.1524" layer="1" grouprefs="BOARD"/>
-<wire x1="25.7194" y1="7.62" x2="22.86" y2="10.4794" width="0.1524" layer="16" grouprefs="BOARD"/>
-<wire x1="22.86" y1="10.4794" x2="22.86" y2="13.97" width="0.1524" layer="16" grouprefs="BOARD"/>
+<wire x1="25.7194" y1="8.255" x2="22.86" y2="11.1144" width="0.1524" layer="16" grouprefs="BOARD"/>
+<wire x1="22.86" y1="11.1144" x2="22.86" y2="13.97" width="0.1524" layer="16" grouprefs="BOARD"/>
 <contactref element="H1" pad="D+1"/>
 </signal>
 <signal name="S$10">
 <contactref element="E$1" pad="10"/>
 <contactref element="IC1" pad="23"/>
-<via x="29.68618125" y="6.97" extent="1-16" drill="0.35" grouprefs="BOARD"/>
-<wire x1="42.385" y1="6.97" x2="29.68618125" y2="6.97" width="0.1524" layer="1" grouprefs="BOARD"/>
+<via x="25.74918125" y="6.97" extent="1-16" drill="0.35" grouprefs="BOARD"/>
+<wire x1="42.385" y1="6.97" x2="25.74918125" y2="6.97" width="0.1524" layer="1" grouprefs="BOARD"/>
 <wire x1="22.332459375" y1="10.130228125" x2="25.4" y2="13.19776875" width="0.1524" layer="1" grouprefs="BOARD"/>
 <wire x1="25.4" y1="13.19776875" x2="25.4" y2="13.97" width="0.1524" layer="1" grouprefs="BOARD"/>
-<wire x1="29.68618125" y1="6.97" x2="29.13255" y2="6.97" width="0.1524" layer="16" grouprefs="BOARD"/>
-<wire x1="29.13255" y1="6.97" x2="25.4" y2="10.70255" width="0.1524" layer="16" grouprefs="BOARD"/>
-<wire x1="25.4" y1="10.70255" x2="25.4" y2="13.97" width="0.1524" layer="16" grouprefs="BOARD"/>
+<wire x1="26.76518125" y1="8.70236875" x2="26.76518125" y2="7.986" width="0.1524" layer="16"/>
+<wire x1="25.74918125" y1="6.97" x2="26.76518125" y2="7.986" width="0.1524" layer="16" grouprefs="BOARD"/>
+<wire x1="26.76518125" y1="8.70236875" x2="25.4" y2="10.06755" width="0.1524" layer="16" grouprefs="BOARD"/>
+<wire x1="25.4" y1="10.06755" x2="25.4" y2="13.97" width="0.1524" layer="16" grouprefs="BOARD"/>
 <contactref element="H1" pad="D-1"/>
 </signal>
 <signal name="S$11">
@@ -1259,17 +1297,17 @@ design rules under a new name.</description>
 <signal name="S$33">
 <contactref element="REG" pad="3"/>
 <contactref element="C2" pad="1"/>
-<via x="37.1494" y="6.32" extent="1-16" drill="0.35" grouprefs="BOARD REG_GRP"/>
+<via x="38.0384" y="6.32" extent="1-16" drill="0.35" grouprefs="BOARD REG_GRP"/>
 <wire x1="35.39" y1="7.62" x2="35.39" y2="5.36" width="0.1524" layer="16" grouprefs="BOARD REG_GRP"/>
 <wire x1="35.39" y1="5.36" x2="35.11" y2="5.08" width="0.1524" layer="16" grouprefs="BOARD REG_GRP"/>
-<wire x1="37.1494" y1="6.32" x2="35.8494" y2="7.62" width="0.1524" layer="16" grouprefs="BOARD REG_GRP"/>
-<wire x1="35.8494" y1="7.62" x2="35.39" y2="7.62" width="0.1524" layer="16" grouprefs="BOARD REG_GRP"/>
+<wire x1="38.0384" y1="6.32" x2="36.7384" y2="7.62" width="0.1524" layer="16" grouprefs="BOARD REG_GRP"/>
+<wire x1="36.7384" y1="7.62" x2="35.39" y2="7.62" width="0.1524" layer="16" grouprefs="BOARD REG_GRP"/>
 <contactref element="H1" pad="VBUS1"/>
-<wire x1="42.385" y1="6.32" x2="38.1" y2="6.32" width="0.1524" layer="1"/>
+<wire x1="42.385" y1="6.32" x2="38.0384" y2="6.32" width="0.1524" layer="1"/>
 <contactref element="E$5" pad="P$1"/>
-<wire x1="38.1" y1="6.32" x2="37.1494" y2="6.32" width="0.1524" layer="1"/>
-<wire x1="43.18" y1="1.27" x2="43.15" y2="1.27" width="0.1524" layer="1"/>
-<wire x1="43.15" y1="1.27" x2="38.1" y2="6.32" width="0.1524" layer="1"/>
+<wire x1="38.0384" y1="6.32" x2="38.354" y2="6.32" width="0.1524" layer="1"/>
+<wire x1="43.18" y1="1.494" x2="38.354" y2="6.32" width="0.1524" layer="1"/>
+<wire x1="43.18" y1="1.27" x2="43.18" y2="1.494" width="0.1524" layer="1"/>
 </signal>
 <signal name="S$23">
 <contactref element="H2" pad="8"/>
@@ -1283,8 +1321,8 @@ design rules under a new name.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="E$2" pad="10"/>
 <contactref element="IC1" pad="10"/>
-<via x="37.1494" y="8.92" extent="1-16" drill="0.35" grouprefs="BOARD REG_GRP"/>
-<wire x1="37.1494" y1="8.92" x2="36.35" y2="8.92" width="0.1524" layer="16" grouprefs="BOARD REG_GRP"/>
+<via x="38.0384" y="8.92" extent="1-16" drill="0.35" grouprefs="BOARD REG_GRP"/>
+<wire x1="38.0384" y1="8.92" x2="36.35" y2="8.92" width="0.1524" layer="16" grouprefs="BOARD REG_GRP"/>
 <wire x1="36.35" y1="8.92" x2="35.11" y2="10.16" width="0.1524" layer="16" grouprefs="BOARD REG_GRP"/>
 <wire x1="34.2074" y1="7.9606875" x2="34.2074" y2="7.6874" width="0.1524" layer="16" grouprefs="BOARD REG_GRP"/>
 <wire x1="34.2074" y1="7.6874" x2="33.19" y2="6.67" width="0.1524" layer="16" grouprefs="BOARD REG_GRP"/>
@@ -1317,8 +1355,8 @@ design rules under a new name.</description>
 <wire x1="23.246115625" y1="4.1961125" x2="22.860003125" y2="3.81" width="0.1524" layer="1" grouprefs="BOARD"/>
 <wire x1="22.860003125" y1="3.81" x2="22.86" y2="3.81" width="0.1524" layer="1" grouprefs="BOARD"/>
 <via x="22.86" y="3.81" extent="1-16" drill="0.35" grouprefs="BOARD"/>
-<wire x1="22.86" y1="3.81" x2="17.4625" y2="9.2075" width="0.1524" layer="16" grouprefs="BOARD"/>
-<wire x1="17.4625" y1="9.2075" x2="17.145" y2="9.525" width="0.1524" layer="16" grouprefs="BOARD"/>
+<wire x1="22.86" y1="3.81" x2="17.78" y2="8.89" width="0.1524" layer="16"/>
+<wire x1="17.78" y1="8.89" x2="17.145" y2="9.525" width="0.1524" layer="16" grouprefs="BOARD"/>
 <wire x1="17.145" y1="9.525" x2="17.145" y2="11.43" width="0.1524" layer="16" grouprefs="BOARD"/>
 <via x="17.145" y="11.43" extent="1-16" drill="0.35" grouprefs="BOARD"/>
 <contactref element="IC1" pad="EXP"/>
@@ -1327,14 +1365,16 @@ design rules under a new name.</description>
 <wire x1="22.332459375" y1="5.10976875" x2="21.59" y2="5.852228125" width="0.1524" layer="1" grouprefs="BOARD"/>
 <wire x1="21.59" y1="5.852228125" x2="21.59" y2="6.35" width="0.1524" layer="1" grouprefs="BOARD"/>
 <contactref element="H1" pad="GND1"/>
-<wire x1="42.385" y1="8.92" x2="38.13" y2="8.92" width="0.1524" layer="1"/>
+<wire x1="42.385" y1="8.92" x2="38.0384" y2="8.92" width="0.1524" layer="1"/>
 <contactref element="E$4" pad="P$1"/>
-<wire x1="38.13" y1="8.92" x2="37.1494" y2="8.92" width="0.1524" layer="1"/>
-<wire x1="43.18" y1="13.97" x2="38.13" y2="8.92" width="0.1524" layer="1"/>
+<wire x1="43.18" y1="13.843" x2="38.257" y2="8.92" width="0.1524" layer="1"/>
+<wire x1="38.0384" y1="8.92" x2="38.257" y2="8.92" width="0.1524" layer="1"/>
+<wire x1="43.18" y1="13.97" x2="43.18" y2="13.843" width="0.1524" layer="1"/>
 <contactref element="RST" pad="1"/>
-<wire x1="17.4625" y1="9.2075" x2="15.875" y2="7.62" width="0.1524" layer="16"/>
-<via x="15.875" y="7.62" extent="1-16" drill="0.35"/>
-<wire x1="15.875" y1="7.62" x2="14.4" y2="7.62" width="0.1524" layer="1"/>
+<wire x1="17.78" y1="8.89" x2="17.145" y2="8.255" width="0.1524" layer="16"/>
+<via x="17.145" y="8.255" extent="1-16" drill="0.35"/>
+<wire x1="17.145" y1="8.255" x2="16.51" y2="7.62" width="0.1524" layer="1"/>
+<wire x1="16.51" y1="7.62" x2="15.67" y2="7.62" width="0.1524" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
